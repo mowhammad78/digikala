@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+@font-face {
+  font-family: yekan;
+  src: url(../fonts/fa/BYekan.woff2);
+  src: url(../fonts/fa/BYekan.woff);
+  src: url(../fonts/fa/BYekan.ttf);
+  src: url(../fonts/fa/BYekan.eot);
+}
+@font-face {
+  font-family: iranyekan;
+  src: url(../fonts/fa-1/BYekan.woff2);
+  src: url(../fonts/fa-1/BYekan.woff);
+  src: url(../fonts/fa-1/BYekan.ttf);
+  src: url(../fonts/fa-1/BYekan.eot);
+}
+.wrapper {
+  width: 100%;
+}
+.root {
+  --font-family: iranyekan;
+  --font-number: yekan;
+}
+body {
+  min-height: 100vh;
+}
+
+.swiper-button-next,
+.swiper-button-next,
+.swiper-button-prev,
+.swiper-button-prev {
+  width: 40px;
+  height: 40px;
+  background-color: whitesmoke;
+  border-radius: 59%;
+  svg {
+    width: 20px;
+    height: 20px;
+    path {
+      fill: black;
+    }
+  }
+
+  .swiper-pagination-bullet-active {
+    width: 20px;
+    background-color: black;
+    border-radius: 4px;
+  }
+}

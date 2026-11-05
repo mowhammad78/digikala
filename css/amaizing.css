@@ -1,0 +1,245 @@
+
+.amazing-day {
+  width: 100%;
+  margin-bottom: 30px;
+
+  .amazing-day-center {
+    max-width: 1300px;
+    margin: 0 auto;
+    background-color: #d52e4e;
+    border-radius: 16px;
+    padding: 20px 20px 24px;
+    box-sizing: border-box;
+    position: relative;
+
+    
+    .section-title-white {
+      display: flex;
+      align-items: center;
+      column-gap: 10px;
+      margin-bottom: 16px;
+      font-family: var(--font-number);
+      font-size: 24px;
+      font-weight: 400;
+      color: #fff;
+
+      img {
+        width: 28px;
+        height: 28px;
+      }
+    }
+
+    .amazing-day-swiper {
+      width: 100%;
+      overflow: hidden;
+      border-radius: 8px;
+
+      .swiper-slide {
+        width: 380px !important;
+        height: auto;
+      }
+
+      
+      .swiper-button-next,
+      .swiper-button-prev {
+        top: 50%;
+      }
+    }
+  }
+}
+
+
+.card-horizontal {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  height: 100%;
+  padding: 12px 16px;
+  background-color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #23254e;
+  position: relative;
+  overflow: hidden;
+
+  
+  .card-badge {
+    width: 116px;
+    height: 14px;
+    margin-bottom: 8px;
+    object-fit: contain;
+  }
+
+  .card-body {
+    flex: 1;
+    display: flex;
+    column-gap: 12px;
+  }
+
+  
+  .card-img {
+    width: 150px;
+    height: 150px;
+    flex-shrink: 0;
+    object-fit: contain;
+    border-radius: 8px;
+  }
+
+  
+  .card-info {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card-title {
+    font-family: var(--font-family);
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 24px;
+    margin-bottom: 6px;
+    color: #3f4064;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    overflow: hidden;
+  }
+
+  
+  .card-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+    font-family: var(--font-family);
+    font-size: 12px;
+    color: #62666d;
+
+    .card-color {
+      display: flex;
+      align-items: center;
+      column-gap: 6px;
+
+      i {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        border: 1px solid #e0e0e2;
+      }
+    }
+
+    .card-rate {
+      font-family: var(--font-number);
+      font-weight: bold;
+      color: #3f4064;
+    }
+  }
+
+  
+  .card-price {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .card-discount {
+      font-family: var(--font-number);
+      font-size: 13px;
+      font-weight: bold;
+      padding: 2px 6px;
+      border-radius: 12px;
+      background-color: #d52e4e;
+      color: #fff;
+    }
+
+    .card-final {
+      font-family: var(--font-number);
+      font-size: 18px;
+      font-weight: bold;
+      color: #3f4064;
+    }
+  }
+
+  .card-old {
+    margin-top: 2px;
+    text-align: left;
+    font-family: var(--font-number);
+    font-size: 13px;
+    color: #c0c2c5;
+    text-decoration: line-through;
+  }
+
+  
+  .card-progress {
+    width: 100%;
+    height: 4px;
+    margin-top: auto;
+    background-color: #f0f0f1;
+    border-radius: 2px;
+    overflow: hidden;
+
+    .card-progress-bar {
+      height: 100%;
+      background-color: #d52e4e;
+      border-radius: 2px;
+    }
+  }
+
+  .card-sold {
+    display: flex;
+    align-items: center;
+    column-gap: 4px;
+    margin-top: 6px;
+    font-family: var(--font-family);
+    font-size: 11px;
+    color: #62666d;
+
+    b {
+      font-family: var(--font-number);
+      color: #d52e4e;
+    }
+
+    .card-timer {
+      margin-right: auto;
+      font-family: var(--font-number);
+      font-size: 13px;
+      font-weight: bold;
+      color: #d52e4e;
+      direction: ltr;
+    }
+  }
+}
+
+
+.card-locked {
+  min-height: 200px;
+  pointer-events: none;
+
+  .card-lock {
+    position: absolute;
+    inset: 0; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 14px;
+    background-color: rgba(35, 37, 78, 0.55);
+
+    img {
+      width: 64px;
+      height: 64px;
+      padding: 16px;
+      box-sizing: border-box;
+      border-radius: 50%;
+      background-color: #ef394e;
+    }
+
+    p {
+      font-family: var(--font-family);
+      font-size: 14px;
+      font-weight: bold;
+      color: #fff;
+    }
+  }
+}

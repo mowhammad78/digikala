@@ -1,0 +1,319 @@
+.incredible-page {
+  .is-hidden {
+    visibility: hidden;
+  }
+
+  
+  .ending {
+    .section-title {
+      svg {
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+
+  .card-vertical {
+    .card-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      min-height: 22px;
+      margin-bottom: 6px;
+    }
+
+    .card-stock {
+      display: flex;
+      align-items: center;
+      column-gap: 4px;
+      margin-bottom: 0;
+    }
+
+    .card-stock-low {
+      color: var(--red);
+    }
+
+    
+    .card-price {
+      .card-final::after {
+        content: " تومان";
+        font-family: var(--font-family);
+        font-size: 10px;
+        font-weight: normal;
+        color: var(--muted);
+      }
+    }
+
+    .card-promo {
+      margin-top: auto;
+      padding-top: 8px;
+    }
+
+    
+    .ico {
+      flex-shrink: 0;
+      width: 14px;
+      height: 14px;
+      background: center / contain no-repeat;
+    }
+
+    .ico-seller {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23f9a825' stroke-width='2' stroke-linecap='round'%3E%3Ccircle cx='12' cy='8' r='4'/%3E%3Cpath d='M4 21c0-4 3.6-7 8-7s8 3 8 7'/%3E%3C/svg%3E");
+    }
+
+    .ico-wh {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2319bfd3' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M3 10l9-6 9 6v10H3z'/%3E%3Cpath d='M9 20v-6h6v6'/%3E%3C/svg%3E");
+    }
+
+    .ico-near {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23f9a825' stroke-width='2' stroke-linecap='round'%3E%3Ccircle cx='12' cy='12' r='9'/%3E%3Cpath d='M12 7v5l3 2'/%3E%3C/svg%3E");
+    }
+  }
+
+  
+  .shortcut {
+    .shortcut-center {
+      min-height: 88px;
+      padding: 12px 28px 12px 20px;
+    }
+
+    
+    .shortcut-right {
+      column-gap: 14px;
+
+      img {
+        width: auto;
+        height: auto;
+        max-width: none;
+        filter: none;
+      }
+
+      .shortcut-icon {
+        width: 56px;
+        height: 56px;
+      }
+
+      .shortcut-title {
+        height: 36px;
+        width: auto;
+      }
+
+      .shortcut-badge {
+        display: inline-flex;
+        align-items: center;
+        height: 26px;
+        padding: 0 12px;
+        border-radius: 14px;
+        font-size: 12px;
+        white-space: nowrap;
+
+        p {
+          margin: 0;
+        }
+      }
+
+      
+      .clock-small {
+        display: inline-flex;
+        align-items: center;
+        padding: 3px 10px;
+        border-radius: 8px;
+        background-color: #fff;
+        white-space: nowrap;
+
+        b {
+          width: auto;
+          height: auto;
+          border-radius: 0;
+          background: none;
+          font-size: 14px;
+          letter-spacing: 1px;
+          white-space: nowrap;
+        }
+      }
+
+      small {
+        font-size: 12px;
+        font-weight: normal;
+      }
+    }
+
+    
+    .shortcut-left {
+      column-gap: 22px;
+
+      .shortcut-products {
+        flex-wrap: nowrap;
+        column-gap: 14px;
+        max-height: none;
+        overflow: visible; 
+      }
+
+      
+      .shortcut-product {
+        display: block;
+        width: 60px;
+        height: 60px;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background: none;
+
+        img {
+          display: block;
+          width: 100%;
+          height: 100%;
+          background-color: #fff;
+          box-shadow: 0 0 0 1px #ececee;
+        }
+
+        .card-discount {
+          right: 50%;
+          bottom: -5px;
+          transform: translateX(50%);
+          padding: 2px 6px;
+          font-size: 11px;
+          line-height: 14px;
+          white-space: nowrap;
+        }
+      }
+
+    
+      .shortcut-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        height: 40px;
+        padding: 0 18px;
+        border-radius: 20px;
+        font-size: 12px;
+
+        &::after {
+          content: "←";
+          font-size: 16px;
+          line-height: 1;
+        }
+      }
+    }
+  }
+
+  .shortcut-fresh {
+    .shortcut-center {
+      background: linear-gradient(90deg, #e9eeea 0%, #e6f1e8 100%);
+    }
+  }
+
+  .shortcut-tomorrow {
+    .shortcut-center {
+      background: linear-gradient(90deg, #fce7ec 0%, #f4f0f2 100%);
+    }
+
+    .shortcut-right {
+      display: grid;
+      grid-template-columns: auto auto;
+      grid-template-areas:
+        "title clock"
+        "note  note";
+      justify-content: start;
+      column-gap: 16px;
+      row-gap: 6px;
+
+      .shortcut-title {
+        grid-area: title;
+      }
+
+      .clock-small {
+        grid-area: clock;
+      }
+
+      small {
+        grid-area: note;
+      }
+    }
+  }
+
+  
+  .plus {
+    .plus-center {
+      min-height: 96px;
+
+      .plus-logo {
+        display: block;
+        font-size: 0; 
+
+        img {
+          display: block;
+          width: 461px;
+          height: 83px;
+          max-width: 100%;
+          object-fit: contain;
+        }
+      }
+
+      .plus-info {
+        align-items: flex-start;
+        row-gap: 8px;
+
+        .plus-title {
+          display: flex;
+          align-items: center;
+          column-gap: 6px;
+
+          svg {
+            width: 16px;
+            height: 16px;
+          }
+        }
+
+        .clock {
+          flex-flow: row;
+          direction: ltr;
+          justify-content: flex-start;
+          column-gap: 8px;
+
+          .clock-label {
+            display: inline-flex;
+            align-items: center;
+            column-gap: 4px;
+            margin: 0 4px 0 0;
+            direction: rtl;
+            font-size: 12px;
+            font-weight: normal;
+            color: #62666d;
+
+            &::before {
+              content: "i";
+              display: inline-flex;
+              align-items: center;
+              justify-content: center;
+              width: 14px;
+              height: 14px;
+              border: 1px solid var(--muted);
+              border-radius: 50%;
+              font-family: Georgia, serif;
+              font-size: 9px;
+              font-style: italic;
+              color: var(--muted);
+            }
+          }
+
+          .clock-box {
+            min-width: 44px;
+            padding: 4px 8px;
+            border-radius: 8px;
+
+            b {
+              font-size: 15px;
+              line-height: 20px;
+            }
+
+            small {
+              font-size: 9px;
+              color: var(--muted);
+            }
+          }
+        }
+      }
+    }
+  }
+}

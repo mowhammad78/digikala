@@ -1,0 +1,132 @@
+.shortcut {
+  width: 100%;
+  margin-bottom: 30px;
+  padding: 0 16px;
+  box-sizing: border-box;
+}
+
+.shortcut-center {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: var(--page-width, 1650px);
+  min-height: 120px;
+  margin: 0 auto;
+  padding: 16px 28px;
+  box-sizing: border-box;
+  border-radius: 16px;
+  color: #fff;
+}
+
+.shortcut-fresh .shortcut-center {
+  background: linear-gradient(90deg, #5d9a1f, #70ba2b);
+}
+.shortcut-tomorrow .shortcut-center {
+  background: linear-gradient(90deg, #3c2a8f, #6a4fd1);
+}
+
+.shortcut-right {
+  display: flex;
+  align-items: center;
+  column-gap: 14px;
+}
+.shortcut-right img {
+  width: 40px;
+  height: 40px;
+  filter: brightness(0) invert(1);
+}
+.shortcut-right h3 {
+  font-family: var(--font-number);
+  font-size: 28px;
+  font-weight: 400;
+}
+.shortcut-right small {
+  font-family: var(--font-family);
+  font-size: 13px;
+}
+.shortcut-tomorrow .shortcut-right {
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 8px;
+}
+
+
+.shortcut-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 12px;
+  height: 32px;
+  border-radius: 16px;
+  background-color: #1b5e20;
+  color: #fff;
+  font-family: var(--font-family);
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.shortcut-left {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+
+.shortcut-products {
+  display: flex;
+  column-gap: 12px;
+}
+.shortcut-product {
+  position: relative;
+  display: block;
+  width: 84px;
+  height: 84px;
+  border-radius: 50%;
+  background-color: #fff;
+  overflow: hidden;
+}
+.shortcut-product img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.shortcut-product .card-discount {
+  position: absolute;
+  right: 50%;
+  bottom: 4px;
+  transform: translateX(50%);
+  padding: 1px 6px;
+  border-radius: 10px;
+  background-color: #d52e4e;
+  color: #fff;
+  font-family: var(--font-number);
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.shortcut-btn {
+  padding: 10px 18px;
+  border-radius: 8px;
+  background-color: #fff;
+  color: #23254e;
+  font-family: var(--font-family);
+  font-size: 13px;
+  font-weight: bold;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+
+.clock-small {
+  display: flex;
+  direction: ltr;
+  align-items: center;
+  column-gap: 4px;
+  font-family: var(--font-number);
+  font-size: 14px;
+}
+.clock-small b {
+  padding: 3px 6px;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #3c2a8f;
+}

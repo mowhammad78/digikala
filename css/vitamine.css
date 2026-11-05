@@ -1,0 +1,121 @@
+.vitamine {
+  width: 100%;
+  height: 400px;
+  margin-bottom: 50px;
+  margin-top: 30px;
+  .vitamine-center {
+    max-width: 1320px;
+    height: 100%;
+    margin: 0 auto;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    .vitamine-center-top {
+      box-sizing: border-box;
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      padding: 20px 20px 0 20px;
+      .vitamine-center-top-right {
+        h3 {
+          font-family: var(--font-family);
+          font-size: 20px;
+          margin-bottom: 10px;
+        }
+        p {
+          font-family: var(--font-family);
+          font-size: 12px;
+        }
+      }
+      .vitamine-center-top-left {
+        a {
+         margin-bottom: 30px;
+          padding: 10px 15px;
+          display: flex;
+          align-items: center;
+          column-gap: 10px;
+          border-radius: 4px;
+          background-color: #f0f0f1;
+          font-family: var(--font-family);
+          font-size: 12px;
+          text-decoration: none;
+          color: black;
+          img {
+            width: 20px;
+            height: 20px;
+          }
+        }
+      }
+    }
+    .vitamine-center-bottom {
+      .swiper {
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        .swiper-slide-item {
+          width: 100%;
+          height: 100%;
+          img {
+            width: 100%;
+            height: 164px;
+            margin-bottom: 10px;
+          }
+          p {
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            box-orient: vertical;
+            -webkit-line-clamp: 2;
+            line-clamp: 2;
+            overflow: hidden;
+            font-family: var(--font-family);
+            font-size: 14px;
+            padding: 0 5px;
+            line-height: 25px;
+            margin-bottom: 10px;
+          }
+          .old-price {
+            display: flex;
+            flex-flow: row-reverse;
+            align-items: center;
+            .old {
+              font-family: var(--font-number);
+              text-decoration: line-through;
+              color: lightgray;
+              margin: 0;
+            }
+            div {
+              font-family: var(--font-number);
+              background-color: #d52e4e;
+              font-size: 12px;
+              padding: 5px;
+              color: whitesmoke;
+              border-radius: 4px;
+            }
+          }
+          .real-price {
+            font-family: var(--font-number);
+            font-size: 18px;
+            font-weight: bold;
+            text-align: left;
+            padding-left: 10px;
+          }
+        }
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}

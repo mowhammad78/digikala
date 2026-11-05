@@ -1,0 +1,105 @@
+.filters {
+  order: -1; 
+  width: 254px;
+  box-sizing: border-box;
+  padding: 0 20px 8px;
+  background-color: #fff;
+  border: 1px solid #e0e0e2;
+  border-radius: 8px;
+  position: sticky;
+  top: 180px;
+  max-height: calc(100vh - 200px);
+  overflow-y: auto;
+
+  .filters-title {
+    padding: 24px 0 16px;
+    font-family: var(--font-family);
+    font-size: 18px;
+    font-weight: bold;
+    color: #3f4064;
+  }
+
+  
+  .filter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 0;
+    border-bottom: 1px solid #f0f0f1;
+    font-family: var(--font-family);
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 26px;
+    color: #3f4064;
+    cursor: pointer;
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+  .filter-drop {
+    transition: color 0.2s ease;
+
+    &:hover {
+      color: #ef394e;
+    }
+  }
+
+  
+  .filter-switch {
+    column-gap: 16px;
+
+    input[type="checkbox"] {
+      appearance: none;
+      -webkit-appearance: none;
+      position: relative;
+      flex-shrink: 0;
+      width: 40px;
+      height: 22px;
+      margin: 0;
+      border-radius: 11px;
+      border: 1px solid #c0c2c5;
+      background-color: #fff;
+      cursor: pointer;
+      transition:
+        background-color 0.2s ease,
+        border-color 0.2s ease;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 3px;
+        right: 3px; 
+        width: 14px;
+        height: 14px;
+        border-radius: 50%;
+        background-color: #c0c2c5;
+        transition:
+          transform 0.2s ease,
+          background-color 0.2s ease;
+      }
+
+      &:checked {
+        border-color: #ef394e;
+        background-color: #ef394e;
+
+        &::before {
+          background-color: #fff;
+          transform: translateX(-18px);
+        }
+      }
+
+      &:focus-visible {
+        outline: 2px solid #19bfd3;
+        outline-offset: 2px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .filters {
+    display: none;
+  }
+}

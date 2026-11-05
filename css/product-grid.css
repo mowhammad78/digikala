@@ -1,0 +1,247 @@
+.suggest {
+  width: 100%;
+  margin-bottom: 30px;
+  font-family: var(--font-family, "Vazirmatn", Tahoma, sans-serif);
+}
+
+
+.suggest-center {
+  max-width: 1300px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+
+.section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 16px;
+}
+
+.section-header__title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #0c0c0c;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  column-gap: 0;
+  row-gap: 0;
+
+  
+  margin-inline-end: -1px;
+}
+
+
+.product-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  min-height: 477px;
+  padding: 12px 16px;
+  background: #fff;
+  border-inline-end: 1px solid #f0f0f1;
+  border-bottom: 1px solid #f0f0f1;
+  text-decoration: none;
+  color: #3f4064;
+  overflow: hidden;
+  transition: box-shadow 0.2s ease;
+}
+
+.product-card:hover {
+  z-index: 1;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.12);
+}
+
+
+.product-card__badge {
+  height: 14px;
+  margin-bottom: 4px;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 14px;
+  color: #ef394e;
+}
+
+.product-card__badge--amazing {
+  color: #d52e4e;
+}
+
+
+.product-card__badge:empty {
+  visibility: hidden;
+}
+
+
+.product-card__image {
+  display: block;
+  width: 240px;
+  height: 240px;
+  max-width: 100%;
+  margin: 0 auto 8px;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+
+.product-card__title {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  overflow: hidden;
+  min-height: 2.2em;
+  margin-bottom: 4px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 2.2;
+  color: #3f4064;
+}
+
+
+.product-card__meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 24px;
+  margin-bottom: 4px;
+}
+
+.product-card__stock {
+  font-size: 12px;
+  color: #ef4056;
+}
+
+.product-card__rating {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-inline-start: auto;
+  font-size: 14px;
+  font-weight: 700;
+  color: #3f4064;
+}
+
+.product-card__rating i {
+  font-style: normal;
+  font-size: 18px;
+  line-height: 1;
+  color: #fcb913;
+}
+
+
+.product-card__price-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 4px;
+}
+
+.product-card__discount {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1px 8px;
+  border-radius: 12px;
+  background: #d32f2f;
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.product-card__price {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 4px;
+  margin-inline-start: auto; 
+  font-size: 18px;
+  font-weight: 700;
+  color: #3f4064;
+}
+
+.product-card__price small {
+  font-size: 11px;
+  font-weight: 400;
+}
+
+.product-card__old-price {
+  align-self: flex-start;
+  padding-inline-start: 20px;
+  margin-top: 4px;
+  font-size: 14px;
+  color: #c0c2c5;
+  text-decoration: line-through;
+}
+
+
+.product-card__timer {
+  margin-top: auto;
+  padding-top: 8px;
+  text-align: left;
+  direction: ltr;
+  font-size: 14px;
+  font-weight: 700;
+  color: #ef394e;
+}
+
+
+.suggest-more {
+  display: flex;
+  justify-content: center;
+  padding: 16px;
+}
+
+.suggest-more a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 22px;
+  border-radius: 10px;
+  background: #f0f0f1;
+  font-size: 15px;
+  font-weight: 600;
+  color: #3f4064;
+  text-decoration: none;
+  transition: background 0.2s ease;
+}
+
+.suggest-more a:hover {
+  background: #e4e4e6;
+}
+
+
+@media (max-width: 1024px) {
+  .product-grid {
+    grid-template-columns: repeat(3, 33.3333%);
+  }
+}
+
+@media (max-width: 640px) {
+  .product-grid {
+    grid-template-columns: repeat(2, 50%);
+  }
+
+  .product-card {
+    min-height: 0;
+    padding: 12px 8px;
+  }
+
+  .product-card__image {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+  }
+
+  .product-card__price {
+    font-size: 16px;
+  }
+}
